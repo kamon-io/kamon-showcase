@@ -3,7 +3,7 @@ Kamon Showcase
 
 This is a quick a dirty app used to demostrate a few common situations that people might face when working with Kamon to monitor Play and Akka applications, it will get a lot better but good enough to start!
 
-The docker image is here: https://github.com/kamon-io/docker-grafana-graphite and you will need to change the (storage schema)[1] to be 2 seconds so it matches the configured tick interval in Kamon. That is not recommended for production usage, it was made like that just to ensure quick feedback during the presentation!
+The docker image is here: https://github.com/kamon-io/docker-grafana-graphite and you will need to change the [storage schema] to be 2 seconds so it matches the configured tick interval in Kamon. That is not recommended for production usage, it was made like that just to ensure quick feedback during the presentation!
 
 There are some slides on ODP and PDF format (akka-and-play-under-the-hood files) and a grafana-dashboard.json export of the dashboard that was used during the presentation. The commands used to reproduce the scenarios were:
 
@@ -51,4 +51,4 @@ ab -k -c 100 -n 500000 http://localhost:9000/waster
 Totally open to suggestions and feedback, expect a blog post to be shared soon!
 
 
-[1]: https://github.com/kamon-io/docker-grafana-graphite/blob/master/graphite/storage-schemas.conf#L3
+[storage schema]: https://github.com/kamon-io/docker-grafana-graphite/blob/master/graphite/storage-schemas.conf#L3
